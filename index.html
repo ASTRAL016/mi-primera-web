@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<br lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primera pagina wed</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<br>
 
     <header>
         <section class="baner">
@@ -15,6 +15,15 @@
         <h1>Astral gaming</h1>
         <p>primera pagina gaming</p>
     </header>
+
+    <section>
+    <h2>Login / Registro</h2>
+    <input type="text" id="usuario" placeholder="Usuario"><br></br>
+    <input type="password"  id="password" placeholder="Contraseña"><br></br>
+    <button onclick="registrar()">Registrarse</button>
+    <button onclick="login()">Inicial sesion</button>
+    <p id="respuesta"></p>
+    </section>
 
 <div class="juegos">
     <div class="juego">
@@ -45,16 +54,47 @@
             <video src="clips/clip2.mp4" controls></video>
             <p>penta kill de lol</p>
         </div>
-    </div>
+        <h2>Apoya el contenido</h2>
+        <button onclick="like()">like</button>
+        <p id="likes">likes: 0</p>
+            <button onclick="guardarPuntaje()">Guardar puntaje</button>
+    <button onclick="ataque()">atacar</button>
+    </div>  
+</section>
+
+<section>
+    <h2>mini juego</h2>
+    <button onclick="guardarpuntaje()">guardar puntaje</button>
+    <P>has clip lo mas rapido posible cuando apresca el boton</P>
+    <button id="btnjuego" onclick="sumarpunto()" style="display: none;">
+        click
+    </button>
+    <p id="puntos">puntos: 0</p>
 </section>
 
     <section>
         <h2>sobre mi</h2>
-        <P>megista la programacion y los videojuegos</P>
+        <P>megusta la programacion y los videojuegos</P>
         <button onclick="saludar()">haz clic</button>
 
     </section>
 
+    <h2>proyectos</h2>
+    <div class="proyectos">
+        <div class="proyecto">
+            <h3>wed de clips</h3>
+            <p>pagina wed con clips, animaciones de javascript.</p>\
+            <a href="#" target="_blank">ver proyectos</a>
+        </div>
+    </div>
+
+    <section>
+        <h2>contacto</h2>
+        <p>Email:casassebastian399@gmail.com</p>
+        <P>Github: <a href="https://github.com/ASTRAL016" target="_blank">Mi Github</a></P>
+    </section>
+
     <script src="script.js"></script>
+    <button onclick="obtenermensaje()">Conectar con phyton</button>
 </body>
 </html>
